@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src * data: content:;">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+        <meta name="color-scheme" content="light dark">
+        <link rel="stylesheet" href="css/index.css">
+        <script src="cordova.js"></script>
+        <script src="js/index.js"></script>
+    </head>
+    <body>
+        <!-- Mensagem do cordova (Ocultada) -->
+        <div id="deviceready" class="blink" style="display: none;">
+            <p class="event listening">Connecting to Device</p>
+            <p class="event received">Device is Ready</p>
+        </div>
+        
+        <!-- Página de Listagem -->
+        <div class="app-lista" id="applista">
+            <div class="superior" id="listaPizzas">
+            </div>
+
+            <div class="inferior">
+                <input type="button" class="botao-novo" id="btnNovo" value="Novo">
+            </div>
+        </div>
+
+        <!-- Página de Cadastro -->
+        <div class="app-cadastro" id="appcadastro">
+            <div class="imagem" id="imagem">
+            </div>
+            <div class="form">
+                <div class="form-linha">
+                    <div class="form-linha-esq">
+                        <p><b>Pizzaria:</b></p>
+                    </div>
+                    <div class="form-linha-dir">
+                        <input type="text" id="pizzaria">
+                    </div>
+                </div>
+                <div class="form-linha">
+                    <div class="form-linha-esq">
+                        <p><b>Pizza:</b></p>
+                    </div>
+                    <div class="form-linha-dir">
+                        <input type="text" id="pizza">
+                    </div>
+                </div>
+                <div class="form-linha">
+                    <div class="form-linha-esq">
+                        <p><b>Preço:</b></p>
+                    </div>
+                    <div class="form-linha-dir">
+                        <input type="text" id="preco">
+                    </div>
+                </div>
+            </div>
+            <div class="botoes">
+                <input type="button" class="botao" id="btnFoto" value="Foto">
+                <input type="button" class="botao" id="btnSalvar" value="Salvar">
+                <input type="button" class="botao" id="btnExcluir" value="Excluir">
+                <input type="button" class="botao" id="btnCancelar" value="Cancelar">
+            </div>    
+        </div>
+    </body>
+</html>
